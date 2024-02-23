@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thesis</title>
+    <link rel="stylesheet" href="thesis.css">
+</head>
+<body>
+    <h3 class="university1
+    ">Alkitab university</h3>
+    <p style="color: black;float: right;border-bottom: solid; position: relative;right: 50px;">Mubin Sardar qadr</p>
+    <center><a class="Home" href="Cloud.html">Home</a></center>
+    <center><p class="Annotation">(Annotation) <br><br>
+
+
+        Nowadays the use of cloud computing is expanding exponentially. With a very short life has
+        become a technology that will. Moving data and applications to Internet and access to them
+        trough services gives some vantages to organizations. Although today there are still some
+        doubts and reservations towards it.
+        The final thesis work describes and analizes cloud computing world and specially Eucalyptus,
+        a software platform for the implementation of private cloud computing on clusters. As a
+        practical work, it have been release a desktop client for interact with Eucalyptus that allow
+        users to run and connect to virtual machines inside the system. </p></center>
+        <center><p class="pdf">1. (Introduction) <br><br>
+            a. Short overview of cloud computing
+            The use of Internet and new technologies nowadays, for business and for the current
+            users, is already part of everyday life. Any information is available anywhere
+            in the world at any time. That was not possible few years ago. Nowadays it
+            have arisen a lot of possibilities of access to public and private information like internet
+            speed access or the deployment of mobile dispositive that allow the connection to
+            Internet from almost everywhere.
+             Today a lot of people are consulting their mail online through webmail clients, writing
+            collaborative documents using web browsers, creating virtual albums to upload
+            their photos of the holidays. They are running applications and storing data in servers
+            located in Internet and not in their own computers. Something as simple as enter in a
+            web page is the only thing a user needs to begin to use services that reside
+            on a remote server and lets him share private and confidential information, or
+            using computing cycles of a pile of servers that he will ever see with his own eyes. And
+            every day its being used more this services that are called cloud computer services.
+            That name is given because of the metaphor about Internet, as something than the
+            user see like a cloud and cannot see what’s inside. This services can be offered by free or by paying by demand (pay for consume), can
+            be simply like a function calling (like asking the temperature in some city in the
+            world for include it in a web page) or complex (like the usage of a virtual machine
+            with its own operating system, applications and storage space for running
+            applications).
+            This means that many users and organizations can avoid install some applications
+            in their computer or can have more computational power using cloud computer
+            through internet, or they can make their own private cloud to manage it
+            completely, or they can use both options for the moments of high demand of
+            consume. </p></center>
+        <center><p class="pdf">b. (Identify) <br><br> the problem 
+            Nowadays a lot of enterprises or users need to process a long amount of information
+            data or need to do some complex operations, for example some mathematical models
+            calculations, and they need a high amount of process power to resolve it. Maybe the
+            power of a personal computer can be not enough to finish in a determinate time one
+            task, and maybe this task is so punctual that is pointless to acquire the hardware
+            necessary to do it. Also sometimes a user wants to use a program for few times, for
+            example for making some practices in university, and maybe it’s pointless to make
+            install this user a program, like Scilab, so for both problems we see convenient to bring
+            the possibility of use some programs without the needing of install in own computers
+            and with the possibility of have more calculation power. So we have to bring to the
+            user the necessary tools to be able of executing a problem in the cloud of the
+            university.
+            As we will see after, Eucalyptus is a software that allows the management of a private
+            cloud infrastructure, we are not going to enter now in technical explanations, but the
+            truth is that a user that wants to run Scilab in the cloud don’t need to know about the
+            infrastructure that contain this program, we have to remember than users are working
+            with applications, not with infrastructure. It’s also true that for handling with
+            eucalyptus user needs to know their commands and how to use them, so it is needed
+            to deploy a friendly user interface to permit to users open Scilab in the cloud in a
+            comfortable way, forgetting about what it’s inside the system. </p></center>
+        <center><p class="pdf">c. (Objective) <br><br> of the thesis
+            The objective of the thesis is develop a user friendly interface to access to eucalyptus
+            private cloud system and run easily applications hosted inside. To achieve this
+            objective we need to found a programming language able to communicate with
+            eucalyptus. Eucalyptus works like Amazon EC2 so it means that all the modules of
+            eucalyptus works like a web service. This web services are compatible with all
+            languages because use standards (xml/soap), so searching a little we can find Typica,
+            it’s a Java API that allows communicate with Amazon EC2 and have been tested with
+            Eucalyptus, in a very friendly way. Instead of reinventing again this communication in
+            java we will use this API, its open source and also in deployment, so it means that
+            there’s a community of developers behind giving help and actualizing that API.
+            The communication will be deployed with Java, so to deploy the interface it will be
+            some Java graphic library. Java Swing is a graphic library for Java that allows creating in
+            very easy way graphic interfaces. The IDE NetBeans also have a Swing Gui Builder, also
+            known as project Matisse, it is a graphic interface for the creation of graphic interfaces,
+            simplifying the design deployment of this ones.
+            This will allow me to understand how it works internally a private cloud, how to
+            interact with it, and understand witch kind of solutions can provide this technology. It’s
+            quite interesting the fact that Amazon EC2 and Eucalyptus use a compatible API because I’m working with an open-source solution that is working like a very used one
+            like Amazon EC2.  </p></center>
+        <center><p class="pdf">d. Tasks <br><br> of the thesis
+            First of all it will be necessary to be on date about this entire world called cloud
+            computing. Also its important to be familiar about the history of this product, all the
+            technologies that are in contact with it, which are the conditions that encourage to use
+            it, which are the problems that arise with it uses,… In other words be familiar with this
+            new kind of computation.
+            Second task will be identify the problem and the requirements of the solution, having
+            in mind who is going to use this and how.
+            Later it will be necessary design the solution and implement it, and in all this parts will
+            be necessary to write in the documentation of the project what is happening. Finally it
+            will be necessary to try the software created and obtain conclusions. </p></center>
+        <center><p class="pdf">2. (Cloud computing) <br><br>
+            a. Historical view
+            In the 60’s John McCarthy said that "computation may someday be organized as
+            a public utility". This is just a concept attached to cloud computing. Like if it was
+            electricity supplier, user asks for how much it needs and pays as much as he uses, also
+            there’s an illusion of infinite supply. But let’s see a little bit of history.
+            In the early 60's and 70 companies had large mainframe computers which provided
+            services to workers who had access to them through dumb terminals. These
+            computers stored all information and did all calculation. From a dumb terminal orders
+            were sent to the mainframe and it returned the information to that terminal. But these
+            mainframes were very expensive.
+            In the 80's, companies realized that servers based on normal computers could be
+            installed at lower cost than mainframes. Also this gave users a sense of greater control
+            over their actions. So gradually these mainframes were being replaced by computers
+            for the users, also because of the decrease of the prices of the personal computers.
+            In 90’s with begin of the global use of Internet the fashion of lots of computers
+            accessing to one big server came back again. At that time were required web servers
+            with plenty of power to hold the requests that were made from the Internet. From
+            that time to today more services are offered in Internet and more storage need the
+            users of this services. More and more the logic of the applications is being moved in
+            servers in Internet from the personal computers thanks also to the increase of speed
+            of the access to the net and to the facilities to access (mobile dispositive). Nowadays
+            the massive computation needed can be solved by providers that are dedicated to this,
+            in this way various users can share the same infrastructure maximizing the efficiency of
+            this one and minimizing the coasts. At the finish of the dot.com bubble, finish of the 90’s, normally all data centers were
+            using less than 10% of their capabilities because they wanted to reserve the rest for
+            the occasional peaks, at that time Amazon made a great effort to solve this problem
+            adding capabilities by demand to the users, one of the concepts of cloud computing,
+            fast and easy.
+            At 1999 Salesforce.com began to delivery services to enterprises by their own website
+            and pioneered the concept of software as a service. In 2002 Amazon launched Amazon
+            Web Services (AWS), a suite that included storage, computation and others services. In
+            2006 Amazon launched Elastic Compute Cloud (EC2) to small companies and users to
+            let users run their own computer applications in the cloud. In 2008, Eucalyptus was
+            launched, being the first open source AWS API compatible platform for deploying
+            private clouds. In 2009 Google began to offer enterprise applications based in browser
+            as Google Apps. 
+             </p></center>
+        <center><p class="pdf">III. (Types of clouds) <br><br>
+            Public
+            Public cloud (also known as external cloud), is the traditional way, where services are
+            provided by a third part via Internet, and they are visible to everybody (it doesn’t
+            mean that they have to be free). So in the cloud it’s the information of lots of users but
+            they can’t access of course to the information of the others.
+            Private
+            This cloud consists on the hosting of private applications, storage, or computation in
+            the same company emulating a cloud in Internet but only for private use (private
+            networks). The coast of infrastructure and maintenance of it is the same that having it
+            in normal way but the scalability and the sharing of the coasts is better...
+            Hybrid
+            It‘s a combination of public and private cloud. An organization can have a part of their
+            services in its own infrastructure but also in public cloud. Or can use the public just
+            when have peaks of usage. It‘s a good option when you want to have your data or
+            application in local and don‘t want to invest too much in infrastructure. </p></center>
+        <center><p class="pdf">V. (Technologies related) <br><br>
+            In this section are going to be explained some technologies that are attached to cloud
+            computing.
+            Web Services
+            It‘s explained before that cloud computing it‘s based in the offer of services, but what
+            is exactly a service and how it works? Normally two applications written in different
+            languages and executed in different operating systems are not able to communicate
+            between them, but exists a group of protocols and standards for exchanging
+            information between different applications, no matter in which language are written
+            or in which operating system are running. This is really useful, for example over
+            Internet, when we don’t know how is implemented an application running on the web.
+            This can be possible thanks to organizations like OASIS (Organization for the
+            Advancement of Structured Information Standards) and W3C (World Wide Web
+            Consortium). This communication is based in plain text. So it‘s not the same efficient as
+            other kind of communication like CORBA or RMI. (Remote invocation method)
+            The different technologies used for this communication are:
+            XML (Extensible Markup Language)
+            It’s a metalanguage based on labels. It’s very structured and allows to different
+            applications or systems to communicate between them. As it is said in the name is
+            extensible, that it means that it allows defining new labels easily.
+            SOAP (Simple Object Access Protocol)
+            It’s a protocol that defines how two objects of different processes can exchange
+            information through XML messages. WSDL (Web Services Description Language)
+            Based on XML and it’s the public interface in the world of web services. It describes all
+            the services that exist in one location and the way to interact with them.
+            UDDI (Universal Description, Discovery and Integration)
+            It’s a catalogue of all web services that exist in Internet, it was an industrial initiative
+            but nowadays it’s not really used. It’s written in XML.
+            WS-Security (Web Service Security)
+            It’s an extension to SOAP to apply security to web services.
+            Cloud computing security
+            It‘s a set of policies about the security in the cloud focused on computer, network and
+            mostly information protection. These policies are about:
+            1. Data of one user have be totally isolate from data of another and it have to be
+            moved securely inside the cloud.
+            2. Use of identities.
+            3. Physical infrastructure has to be completely secure and the access to the data
+            needs identification.
+            4. Access to data have to be always available for the users, it can‘t happen that
+            one user cannot access to his own data at one moment.
+            5. All the services delivered in the cloud have to be secure.
+            6. All sensible data have to be encrypted. The enterprises that need to storage and process a lot of information use normally
+            data centers. This data centers usually are racks inside rooms dedicated to that with
+            special conditions. Datacenters must include lot of several security policies and
+            redundancies of data, power and communication supply. And have to be in special
+            conditions, like temperature, humidity, etc.
+            Cloud storage
+            It‘s the virtualization of the storage of data using the net and usually by third parts.
+            There are many companies that have huge data centers that allow to others to store
+            on them their date by using virtual servers and storage pools. So the client sees their
+            files, which are organized among in different locations in the data center, as if they
+            were located physically in the same place. This is very useful because enterprises don‘t
+            have to be worried about the infrastructure of their data center but also they pay for
+            how much data they are storing there.
+            Virtualization of computers
+            Virtualization is an abstraction of the resources of a machine between the hardware
+            and the operating system, making a virtual version of a resource being possible to
+            share it.
+            About virtualization of computers, software simulates an entire machine inside of
+            another one. Normally is an operating system that is executed as if it was the only one
+            running in the computer, but that‘s not real because it’s running together with other
+            operation systems and don’t have all the resources of the machine, just a part of them.
+            Many users can have access to one virtual machine, they feel that they are working
+            alone on that, with access to everywhere but they are just using a part of the machine.
+            That software have to manage the principal resources of computer, CPU, RAM, storage
+            and network and the system has to be able to allow all users work together. This
+            virtualization can be:  </p></center>
+        
+        
+        
+        
+        
+
+</body>
+</html>
